@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+/* @import "compass/css3"; */
+ table {
+	 /* font-family: 'Arial'; */
+	 margin: 25px auto;
+	 border-collapse: collapse;
+     border: 1px solid;
+	 /* border: 1px solid #eee; */
+	 /* border-bottom: 2px solid #0cc; */
+	 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10), 0px 10px 20px rgba(0, 0, 0, 0.05), 0px 20px 20px rgba(0, 0, 0, 0.05), 0px 30px 20px rgba(0, 0, 0, 0.05);
+     float: left;
+     margin-left: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+td:focus-within {
+    background: #f4f4f4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+th {
+	 border: 1px solid black;
+	 padding: 3px;
+     background: #0cc;
+	 color: #fff;
+     font-size: 0.95rem
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+td {
+    margin: 0;
+    padding: 2px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+    font-size: 1rem;
+    padding: 0;
+    margin-bottom: 2px;
+    width: 80px;
+    border: 0;
+    background: transparent;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus {
+    outline: none;
+}
+
+.number {
+    width: 50px;
+    padding-left: 15px;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px
+}
+
+.play {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+    color: #50d927;
+}
+
+.plain {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.check {
+    font-size: 20px;
+    padding: 5px;
+    color: #50d927;
+}
+
+.cross {
+    font-size: 20px;
+    padding: 5px;
+    color: red;
+}
+
+.actTables {
+    clear: both;
+    height: 300px;
+}
+
+.actTables th {
+    background: #eda342;
+}
+
+.dutyTables th {
+    background: #c547ff;
+}
+
+.Tables {
+    height: 300px;
+    float: left;
+    clear: both;
+}
+
+.selected {
+    background: lightgrey;
+    width: 300px;
+}
+
+.unselected {
+    width: 300px;
+}
+
+.treeWrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.hist {
+    float: left;
+    margin-left: 50px;
+    clear: both;
 }
